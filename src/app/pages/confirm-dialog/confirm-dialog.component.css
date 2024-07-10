@@ -1,0 +1,50 @@
+/* Style for the confirmation dialog */
+.confirm-container {
+    padding: 10px;
+}
+
+.mat-dialog-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.mat-dialog-content {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.mat-dialog-actions {
+    display: flex;
+    justify-content: flex-end;
+}
+
+button {
+    margin-left: 10px;
+    border: 0;
+    outline: 0;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#delete {
+    background-color: red;
+    color: white;
+}
+
+button.mat-button {
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+button.mat-button.mat-warn {
+    background-color: #f44336;
+    /* Red */
+    color: white;
+}
+
+button.mat-button.mat-warn:hover {
+    background-color: #d32f2f;
+}
