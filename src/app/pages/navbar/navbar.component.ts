@@ -13,7 +13,7 @@ export class NavbarComponent {
   constructor(private router: Router, private toastr: ToastrService) { }
 
   logout() {
-    localStorage.removeItem("accessToken");
+    sessionStorage.removeItem("accessToken");
     this.toastr.success('Logout Successful!', 'Success');
     this.router.navigateByUrl('/');
   }

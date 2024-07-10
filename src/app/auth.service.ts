@@ -8,11 +8,11 @@ export class AuthService {
     constructor() { }
 
     isAuthenticated(): boolean {
-        if (typeof window === 'undefined' || !window.localStorage) {
+        if (typeof window === 'undefined' || !window.sessionStorage) {
             return false;
         }
 
-        const token = localStorage.getItem('accessToken');
+        const token = sessionStorage.getItem('accessToken');
         return !!token;
     }
 }

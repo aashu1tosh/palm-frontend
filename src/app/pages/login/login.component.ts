@@ -33,7 +33,7 @@ export class LoginComponent {
         if (res.success) {
           if (res.data.role == "ADMIN") {
             this.toastr.success('Login successful!', 'Success');
-            localStorage.setItem('accessToken', res.data.token.accessToken);
+            sessionStorage.setItem('accessToken', res.data.token.accessToken);
             this.router.navigateByUrl('/dashboard');
           } else {
             this.router.navigateByUrl('/user');
